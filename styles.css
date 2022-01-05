@@ -4,10 +4,20 @@
     padding: 0;
 }
 
+
+
 body {
     font-family: 'Raleway', sans-serif;
     color: #525252;
     user-select: none;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+.empty{
+    border: 1px solid red;
 }
 .container {
     display: flex;
@@ -147,18 +157,38 @@ input[type=range]::-moz-range-track {
     font-size: 0.5em;
     text-transform: uppercase;
 }
+.planning{
+    padding-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.planning__title{
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.planning__add{
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+}
 
+.planning__add input{
+    height: 20px;
+    margin-left: 1rem;
+}
+.planning__add:hover{
+    cursor: pointer;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.planning__name{
+    color: #525252;
+    letter-spacing: 2px;
+}
+.planning__tempo{
+    color: #b10b19;
+    font-size: 18px;
+}
